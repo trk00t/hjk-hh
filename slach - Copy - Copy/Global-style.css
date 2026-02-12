@@ -1,0 +1,204 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     background: #ffffff;
+     color: #1E252D;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+ }
+
+ .container {
+     max-width: 420px;
+     width: 100%;
+     background: white;
+     border-radius: 20px;
+     position: relative;
+ }
+
+ .header {
+     text-align: center;
+     margin-bottom: 0px;
+ }
+
+ .progress-bar {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     margin-bottom: 20px;
+ }
+
+ .progress-track {
+     flex: 1;
+     height: 12px;
+     background: #f3f4f6;
+     border-radius: 16px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .progress-fill {
+     position: absolute;
+     width: 5%;
+     height: 100%;
+     background: #36bffa;
+     border-radius: 16px;
+     left: 0;
+     top: 0;
+     transition: width 0.5s ease;
+ }
+
+ .progress-text {
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 700;
+     font-size: 20px;
+     color: #111927;
+ }
+
+ .message-bubble {
+     background: white;
+     color: #1E252D;
+     padding: 16px 20px;
+     border-radius: 20px 20px 20px 4px;
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 1.5;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+     border: 1px solid #f3f4f6;
+ }
+
+ .message-bubble h2 {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 1.5;
+     margin: 0;
+ }
+
+ .message-bubble .brand {
+     color: #36bffa;
+     background: white;
+     padding: 2px 8px;
+     border-radius: 6px;
+     display: inline-block;
+     margin: 0 2px;
+ }
+
+ .character {
+     text-align: center;
+     margin-bottom: 0px;
+ }
+
+ .character-img {
+     width: 142px;
+     transform: rotate(180deg);
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ .input-field {
+     width: 100%;
+     padding: 14px 50px 14px 16px;
+     /* Increased right padding from 16px (implicit) or previous value to 50px for icon spacing */
+     border: 1px solid rgba(30, 37, 45, 0.16);
+     border-radius: 12px;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     color: #1E252D;
+     background: white;
+     transition: all 0.3s ease;
+     position: relative;
+ }
+
+ .input-wrapper {
+     position: relative;
+ }
+
+ .input-icon {
+     position: absolute;
+     right: 20px;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 20px;
+     height: 20px;
+     opacity: 0.6;
+ }
+
+ .input-field:focus {
+     outline: none;
+     border-color: #36bffa;
+     box-shadow: 0 0 0 3px rgba(54, 191, 250, 0.1);
+ }
+
+ .input-field::placeholder {
+     color: rgba(30, 37, 45, 0.6);
+ }
+
+ .btn-continue {
+     width: 100%;
+     padding: 18px;
+     background: #2563EB;
+     color: white;
+     border: none;
+     border-radius: 12px;
+     font-size: 14px;
+     font-weight: 600;
+     font-family: 'Poppins', sans-serif;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     margin-top: 10px;
+ }
+
+ .btn-continue:hover {
+     background: #1d4ed8;
+     transform: translateY(-2px);
+     box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+ }
+
+ .btn-continue:active {
+     transform: translateY(0);
+ }
+
+ .bottom-indicator {
+     width: 134px;
+     height: 5px;
+     background: rgba(17, 25, 39, 0.5);
+     border-radius: 10px;
+     margin: 30px auto 0;
+ }
+
+ @media (max-width: 480px) {
+     .container {
+         padding: 30px 20px;
+     }
+ }
+
+ [dir="ltr"] .input-field {
+     padding: 14px 16px 14px 50px;
+ }
+
+ [dir="ltr"] .input-icon {
+     right: auto;
+     left: 20px;
+ }
+
+ /* Icon*/
+
+ .N_boot_icon {
+     width: 173px;
+     height: 291px;
+     align-items: center;
+     justify-content: center;
+     margin-top: 25px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 0px;
+     padding: 0px;
+ }
